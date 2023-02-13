@@ -50,7 +50,7 @@ SSH Keys:
 			$ ssh-add ~/testkey
 
 GIT PUSH:
-	> git push origin main // uploaded git commits tu the main branch of the repo;
+	> git push origin main // uploaded git commits to the main branch of the repo;
 
 WHEN CRATING A REPO LOCALLY:
 	> git init // initialize git repository in this current folder
@@ -88,4 +88,3 @@ Undoing in git:
 	> git reset paste-here-the-commit-to-go-to-copied-at-git-log.
 
 Forking in git:
-	
