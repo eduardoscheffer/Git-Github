@@ -1,0 +1,61 @@
+Here are some corrections to get the course right:
+1) When first opening the terminal in VS Code,  on the top-right of the terminal bar just change from "Powershell" to "Git Bash" and then follow along 
+2) dont use SSH link when cloning...use HTTPS link so it becomes "git clone xxxHTTPSxxx"
+3) dont use "git push origin master" --> use "git push origin main" 
+ because the naming convention has changed from master to main
+###############################################
+
+Free and open source version controle system;
+
+Terms:
+	directory = Folder;
+	CLI = command line interface;
+	cd = change directory;
+	repository = Project, or the folder/place where your project is kept;
+	Github = website to host your repositories online;
+
+Git Commands:
+	clone = bring a repository that is hosted somewhere like github into a folder on your local machine;
+	add = track your files and changes in Git;
+	commit = save your files in Git;
+	push = upload git commits to a remote repo, like github;
+	pull = download changes from remote repo to your local machine, the opposite of push;
+	status = shows all the files that were crated, updated or deleated but haven't been saved on a commot yet;
+		'modified' = the git repository has been modified;
+		'untracked' = git doesn't know about this file yet, first you must tell git to track the file before you can it save it to git;
+
+> git clone https://github.com/eduardoscheffer/fibonacci.git  // bring a repository from github to your local machine;
+
+> git status // shows all the files that were created, updated or deleated but haven't been saved on a commot yet;
+	'modified' = the git repository has been modified;
+	'untracked' = git doesn't know about this file yet, first you must tell git to track the file before you can it save it to git;
+
+> git add <folder-here> // tells git to track the specific folder that was created and it's 'untracked' yet;
+
+> git add . // tells git to track all of the files listed in the status command, both modified and untracked;
+
+> git commit -m "Added a Readme.md and updated the fibonacci sequence" // save your file and modifications (locally), the commit isn't live on Github yet;
+
+SSH Keys:
+	In order to push the commits to github under your account you have to prove to Github that you are the owner of yout account
+
+	Connect your local machine to your github using SSH Keys;
+	Start by generating a key locally using:
+		~ ssh-keygen -t rsa -b 4096 -C "eduardoscheffer91@gmail.com"
+	Connect this new key (public) to your github account;
+	Configure local git to knows about the key you just generated:
+		adding a new SSh Key to the ssh-agent to manage your keys:
+			$ eval "$(ssh-agent -s)"
+			> Agent pid 107
+			$ ssh-add ~/testkey
+
+GIT PUSH:
+	> git push origin main // uploaded git commits tu the main branch of the repo;
+
+WHEN CRATING A REPO LOCALLY:
+	> git init // initialize git repository in this current folder
+	> git add .
+	> git commit -m ""
+	Create a repo in Github and copy the URl 
+	> git remote add origin git@github.com:eduardoscheffer/repoFileName.git
+	> git push origin main
