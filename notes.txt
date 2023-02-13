@@ -59,3 +59,22 @@ WHEN CRATING A REPO LOCALLY:
 	Create a repo in Github and copy the URl 
 	> git remote add origin git@github.com:eduardoscheffer/repoFileName.git
 	> git push origin main
+
+Git Branching:
+	> git branch // * main = you are currently on the main branch;
+	> git checkout // used to switch between branches;
+	> git checkout -b name-of-the-branch // create a new branch and give it a name;
+	
+Git Merging:
+	> git diff // compare two versions of the code and shows me the changes that have been made.
+	> git push --set-upstream origin name-of-the-branch // push up to github;
+	Go to Github and view/comment/accept the Pull Request (PR);
+	> git merge name-of-the-branch // merge the two branches (feature and main) locally;
+
+Pull Request: // a request to have your code pulled into another branch (main)
+	Getting the changes from github to your local machine:
+	> get pull origin main
+
+Remove branch after PR:
+	> git branch -d name-of-the-branch
+	
