@@ -78,3 +78,14 @@ Pull Request: // a request to have your code pulled into another branch (main)
 Remove branch after PR:
 	> git branch -d name-of-the-branch
 	
+Merge Conflicts:
+	Happens when your main branch adds/remove a code/line on the same line that your branch;
+
+Undoing in git:
+	> git reset HEAD~1 // tells git to reset the 'penultimo' commit that you have made.
+	> git reset HEAD // tells git to reset the last commit that you have made.
+	> git log // show all the commits.
+	> git reset paste-here-the-commit-to-go-to-copied-at-git-log.
+
+Forking in git:
+	
