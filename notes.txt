@@ -52,6 +52,9 @@ SSH Keys:
 GIT PUSH:
 	> git push origin main // uploaded git commits to the main branch of the repo;
 
+GIT LOG?
+	> git log --oneline // mostra de forma resumida os commits (versões) do projeto;
+
 WHEN CRATING A REPO LOCALLY:
 	> git init // initialize git repository in this current folder
 	> git add .
