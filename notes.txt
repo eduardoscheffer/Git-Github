@@ -49,10 +49,14 @@ SSH Keys:
 			> Agent pid 107
 			$ ssh-add ~/testkey
 
+COMANDOS UTEIS:
+	> git reset // tira do stage os arquivos;
+	> git pull origin main // traz o repositorio remoto pro git local;
+
 GIT PUSH:
 	> git push origin main // uploaded git commits to the main branch of the repo;
 
-GIT LOG?
+GIT LOG:
 	> git log --oneline // mostra de forma resumida os commits (versões) do projeto;
 
 WHEN CRATING A REPO LOCALLY:
